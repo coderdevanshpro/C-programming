@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    float a,b,c;
+    scanf("%f",&a);
+    b=ceil(a);
+    c=floor(a);
+    printf("%f\n",c);
+    printf("%f\n",b);
+    return 0;
+}
