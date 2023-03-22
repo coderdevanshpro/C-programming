@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int a,b,c,d,e,f;
+    scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+    if((b*c*d)<=(a-e)*f)
+        printf("Goa Jaayenge");
+    else
+    {
+    printf("Padhai Karenge");        
+    }
+        return 0;
+}
+
