@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+float c,s,p,l;
+   
+    scanf("%f",&c);
+   
+    scanf("%f",&s);
+    if(s>c)
+    {
+        p=((s-c)/c)*100.0;
+        printf("Profit\n");
+            printf("%.2f%%",p);
+    }
+    else
+    {
+        l=((float)(c-s)/c)*100.0;
+         printf("Loss\n");
+            printf("%.2f%%",l);
+    }
+   
+}
