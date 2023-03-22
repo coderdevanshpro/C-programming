@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int w1,w2,w3,w4,w5;
+    char name[5];
+   scanf("%d&%d&%d&%d&%d",&w1,&w2,&w3,&w4,&w5);
+    name[0] = (char) w1;
+    name[1] = (char) w2;
+    name[2] = (char) w3;
+    name[3] = (char) w4;
+    name[4] = (char) w5;
+    printf("%s",name);
+    return 0;
+}
