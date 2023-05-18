@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int sumOfEvenOrOdd(int start, int end, int type) {
+    int sum = 0;
+    for (int i = start; i <= end; i++) {
+        if (type == 1 && i % 2 == 0) {
+            sum += i;
+        } else if (type == 0 && i % 2 != 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+int main() {
+    int start, end, type;
+    printf("Enter the starting number: ");
+    scanf("%d", &start);
+    printf("Enter the ending number: ");
+    scanf("%d", &end);
+    printf("Enter 1 for even numbers or 0 for odd numbers: ");
+    scanf("%d", &type);
+
+    int result = sumOfEvenOrOdd(start, end, type);
+    printf("Sum of %s numbers between %d and %d is %d\n", (type == 1) ? "even" : "odd", start, end, result);
+
+    return 0;
+}
